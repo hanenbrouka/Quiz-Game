@@ -11,48 +11,42 @@ import winner from "../image/winner.png";
 
 const ContentDash = () => {
   return (
-    <div className="content">
-      <div className="container1 achievement ">
-        <div className="marginright">
-          <img className=" img1 marginright" src={user}></img>
+    <div className="block">
+      <div className="row">
+        <div className="col-2">
+          <img className="imguser" src={user} alt="*"></img>
         </div>
-        <div className="user pl">
-          <div className="name">
-            <label className="name-user">Oluwatobi Olowu</label>
-            <label className="level">Bonus booster 24lv</label>
-          </div>
-          <div className="ProgressPartie">
-            <div
-              class="progress"
-              role="progressbar"
-              aria-label="Basic example"
-              aria-valuenow="75"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              <div class="progress-bar w-75"></div>
-            </div>
-          </div>
+        <div className="col-8">
+          <label className="label1">Haroun Brouka</label><br/>
+          <label className="label2">Bonus booster 24lv</label>
         </div>
       </div>
-      <div className="container1 cent">
-        <div className="achievement">
-          <label className="title">Achievement</label>
-          <img className="row1" src={lucky} />
-          <img className="row1" src={comeback} />
-          <img className="row1" src={winner} />
+      <div className="row">
+        <div className="col-5">
+          <div className="labelachievement">
+            <label>Achievement</label>
+          </div>
+          <div className="imgachievement">
+            <img className="imgachievement1" src={lucky} />
+            <img className="imgachievement2" src={comeback} />
+            <img className="imgachievement3" src={winner} />
+          </div>
         </div>
-        <div className="achievement">
-          <label className="title"> Featured Ctegory</label>
-          <div class="row g-2">
-            <div>
-              <img className="category row1" src={history} alt="" />
-              <img className="category row1" src={medecin} alt="" />
-            </div>
-            <div class="p-3">
-              <img className="category row1" src={technology} alt="" />
-              <img className="category row1" src={agricol} alt="" />
-            </div>
+        <div className="col-5">
+          <div className="labelcategory">
+            <label> Featured Category</label>
+          </div>
+          <div class="imgcategory">
+          <div className="category1">
+            <img className="imgcategory " src={history} alt="*" />
+            <img className="imgcategory " src={medecin} alt="*" />
+          </div>
+          <div className="category1">
+            <img className="imgcategory " src={technology} alt="*" />
+            <img className="imgcategory " src={agricol} alt="*" />
+          </div>
+           
+           
           </div>
         </div>
       </div>

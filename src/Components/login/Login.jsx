@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [showPassword,setShowPassword]=useState(false);
-
+  
   const navigate = useNavigate();
   const handleShowPassword =(e) =>{
     e.preventDefault();
@@ -18,7 +18,7 @@ function Login() {
     navigate("/dashboard");
   };
   return (
-    <Container fluid style={{ margin: 0, padding: "0.1%" }}>
+    <Container fluid style={{ margin: 0 , padding: "0.1%" }}>
       <Row>
         <Col>
           <img src={loginImage} alt="login" className="image" />
@@ -26,7 +26,6 @@ function Login() {
         <Col>
           <div className="form1">
             <label className="phrase1">Login to your Account</label>
-
             <label className="phrase2">
               with your registered Email Address
             </label>
@@ -54,8 +53,9 @@ function Login() {
                   id="idBtn"
                   //style={{ borderRadius: "100px" }}
                 />
+                </div>
                 <button className="show" onClick={(e)=>handleShowPassword (e)}>{showPassword===true?'hide':'show'}</button>
-              </div>
+              
               <div className="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" checked />
                 <label className="form-check-label">Remember my password</label>
@@ -73,10 +73,11 @@ function Login() {
                 <div className="separator-text">or</div>
                 <div className="separator-line"></div>
               </div>
-              <button type="button" class="btn btn-light" id="btn2">
-                <FcGoogle className="icon" />
-                Login with Google
-              </button>
+             <div > <button type="button" class="btn" id="btn2">  Login with Google </button> </div>
+              <div className="icon" >  <FcGoogle /></div>
+               
+                
+             
             </form>
           </div>
         </Col>

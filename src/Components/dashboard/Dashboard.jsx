@@ -9,8 +9,9 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <Nav />
-      <div className="d-flex w-100">
+    
         <Home />
+        <div className="contenue">
         <ContentDash />
       </div>
     </div>

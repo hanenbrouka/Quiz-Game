@@ -1,97 +1,50 @@
-.content {
+.block{
+    display: flex;
+    justify-content: center;
     background-image: url("../image/Rectangle 31.png");
     background-repeat: no-repeat;
-    width: 100%;
-    background-size: cover;
-    box-shadow: 10px 10px 5px rgba(136, 136, 136, 0.5); /* Ajustez l'opacité selon vos préférences */
+    background: cover;
+    position: absolute;
+    border-radius: 30px;
+   
 
 
-}
-.margingright{
-    margin-right: 30px;
-    padding-right: 30px;
-}
-.cent{
-    justify-content: center;
-}
-.pl{
-    padding-left: 40px;
-}
-.container1 {
+  }
+  .imgcategory {
     display: flex;
-    padding: 40px;
-    margin: 40px;
-}
-
-.container1 > div {
-    margin-right: 20px; /* Ajustez la valeur de la marge selon vos préférences */
-}
-.img1{ 
-    width: 208px ;
-    height: 208px ;
-    margin-top: 25px;
-   margin-left: 75px;
-    border-radius: 30px ;
-    box-shadow: 50px 40px 50px 5px #EDEDED !important;
-
-    
-}
-.achievement{
-    font-size: 30px ;
-    background-image: url("../image/Rectangle%2031.png");
-    background-repeat: no-repeat;
-    /* width: 100% */
-    background-size: cover;
-    box-shadow: 10px 10px 5px rgba(136, 136, 136, 0.5); /* Ajustez l'opacité selon vos préférences */
-
-
-  
-}
-.title{
-    text-align: center;
-}
-.user{
-    /* margin-top: 3:5px !important; */
-    /* margin-right: 0px; */
-    font-size: 25px ;
-}
-.name{
+    flex-direction: row;
+    width: 50px;
+    height: 50px;
+  }
+  .category1{
     display: flex;
     flex-direction: column;
-}
-.ProgressPartie{
-    margin-top: 25px !important;
-    font-size: 50px;
-}
-.lba9i{
-    margin-top: 25px !important;
-
-}
-.box3 {
-    margin-left: 75px;
-    margin-top: 0% !important;
-    margin-bottom: 10px;
-}
-.box4{
-    margin-top: 0% !important;
-    margin-bottom: 10px !important;
-}
-.category{
-    width: 210px;
-    height: 160px;
-    top: 500px;
-    left: 800px;
+    justify-content: space-between !important;
+    
+  }
+  .imguser{
+    width: 200px;
+    height: 200px;
     border-radius: 30px;
-  
-    padding: -10px !important;
-    
-    
-}
-.row1{
-    width: 100px;
-height: 100px;
-top: 636px;
-left: 398px;
-position: inline;
 
+  }
+  .imgachievement{
+   
+    height: 10px;
+  }
+.imgachievement1{
+  width: 100px;
+  height: 100px;
+}
+.imgachievement2{
+  width: 100px;
+  height: 100px;
+}
+.imgachievement3{
+  width: 100px;
+  height: 100px;
+}
+.col-8{
+  margin-left: 40%;
+  padding:40% ;
 }

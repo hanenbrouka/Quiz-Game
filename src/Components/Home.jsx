@@ -1,20 +1,25 @@
 import React from "react";
 import "./Home.css";
-import { MdSpaceDashboard } from "react-icons/md";
+import { BiSolidLogOut } from "react-icons/bi";
+import { MdDashboard } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";
 import { IoMdNotifications } from "react-icons/io";
 
 function Home() {
   return (
-    <div id="sidebar">
-  <div className="bouton">
-    <div><button  className="bouton bg-secondary " href="#" type="submit">Dashboard</button></div>
-    <div><button  className="bouton" href="#">Support</button></div>
-    <div><button  className="bouton" href="#">Notifications</button></div>
-    <div ><button className=" boutton" href="#">Log Out</button></div>
-  </div>
-</div>
+    <div className="sidebar">
+    <label><h1 href="#" className="titre">Quiz Time</h1></label>
+    <div className="menu">
+    <div><a href="#" className="sidebar-link"><MdDashboard /> Dashboard</a></div>
+    <div><a href="#" className="sidebar-link"><BiSupport /> Support</a></div>
+    <div><a href="#" className="sidebar-link"><IoMdNotifications /> Notification</a></div>
 
+    <div className="logout">
+
+    <a href="#" className="sidebar-link logout"><BiSolidLogOut /> Log Out</a></div>
+
+    </div>
+   </div>
   );
 }
 

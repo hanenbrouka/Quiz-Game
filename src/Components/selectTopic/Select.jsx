@@ -6,7 +6,7 @@ import medecin from "../../image/medecin.jpeg";
 import agricol from "../../image/agricol.jpeg";
 import axios from "axios";
 
-const Select = () => {
+const Select = () => { 
   const [quizzes, setQuizzes] = useState([]);
   const fetchTriviaQuizzes = async () => {
     try {
@@ -39,7 +39,7 @@ const Select = () => {
   };
   return (
     <div className="container" id="con">
-   
+          
     <label className="col">Select Topic</label><br/>
     <label className="col">Featured Category</label>
     

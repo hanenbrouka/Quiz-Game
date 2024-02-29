@@ -1,26 +1,21 @@
 .form-control{
-    width: 426px !important;
-    height: 64px !important;
-    top: 632px !important;
-    left: 844px !important;
-    align-items: center;
-    box-shadow: 0px 15px 40px 5px #EDEDED;
-    border-radius: 100px !important;
-   
+  width: 426px !important;
+  height: 64px !important;
+  top: 632px !important;
+  left: 844px !important;
+  align-items: center;
+  box-shadow: 0px 15px 40px 5px #EDEDED;
+  border-radius: 100px !important;
+ 
 
 
 }
 .phrase1{
-width: 335px;
-height: 45px;
-top: 194px;
-left: 800px;
-font-family: Poppins;
+
+margin-right: 110px;
 font-size: 30px;
-font-weight: 700;
-line-height: 45px;
-letter-spacing: 0em;
-text-align: left !important;
+font-weight: 600;
+
 color: #000000;
 
 
@@ -30,12 +25,8 @@ width: 411px;
 height: 28px;
 top: 241px;
 left: 844px;
-font-family: Poppins;
 font-size: 18px;
 font-weight: 400;
-line-height: 28px;
-letter-spacing: 0em;
-text-align: left;
 color: #8692A6;
 
 
@@ -45,10 +36,15 @@ color: #8692A6;
 .icon{
   position: left !important;
   font-size: 20px;
+  position:absolute;
+  right: 35%;
+  bottom:80px;
+  
+
  
   
 }
-row{
+.row{
   justify-content: center;
   display: flex;
   align-items: center;
@@ -62,6 +58,7 @@ row{
   display: flex;
   flex-direction:column ;
   align-items: center;
+  margin-top: -20px;
 
 
 }
@@ -72,20 +69,21 @@ row{
     top: 632px;
     left: 844px;
     border-radius: 30px;
+    border: none;
     background: #8692A6;
+
 
 
 }
 #btn2{
   width: 426px;
   height: 64px;
-  top: 632px;
-  left: 844px;
   border-radius: 30px;
   background: #8692A6;
   box-shadow: 0px 15px 40px 5px #EDEDED;
   background: #FFFFFF;
   text-decoration: black;
+  position: relative;
 
 
 
@@ -96,6 +94,10 @@ row{
     height: 100vh;
     filter: blur(4px);
     background: #1e438480;
+    
+
+
+
 
 }
 .text{
@@ -118,9 +120,6 @@ row{
         margin-left: 300px;
       
 }
-
-
-
 
 
 .separator-container {
@@ -155,3 +154,10 @@ row{
 
 
 }  
+.show{
+  margin-left: 23%;
+  margin-top: -60px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+}

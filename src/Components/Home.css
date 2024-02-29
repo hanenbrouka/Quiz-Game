@@ -1,50 +1,46 @@
-#sidebar {
-    position: flex;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 200px;
-    background-color: #faf3f3;
-    color: #fff;
-    
-  }
+.sidebar {
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #f1f1f1;
+ }
+ 
+ .sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+ }
+ .menu{
+  padding-top: 20px;
+  padding-left: 30px;
   
-  #sidebar div {
-    list-style: none; 
-    padding: 20px;
-    margin: 0px;
-  }
+ }
+ 
+ .sidebar div {
+  margin-bottom: 10px;
+ }
+ 
+ .sidebar a {
+  display: block;
+  padding: 10px;
+  background-color: #f1f1f1;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+ }
+ 
+ .sidebar a:hover {
+  background-color: #ddd;
+ }
+ .titre{
+  font-size: 25px;
+  margin-left:  40px;
+  margin-top: 20px;
+ }
+ .logout{
   
-  #sidebar div  {
-    padding: 20px;
-    border-bottom: 1px solid #444;
-  }
-  
-  #sidebar div  .boutton{
-    color: #444;
-    text-decoration: none;
-  }
-  
-  #sidebar div div a:hover {
-    color: #ddd;
-  }
-  
-  #sidebar  div:last-child {
-    border-bottom: none;
-  }
-  .bouton {
-    border-radius: 30px !important;
-    padding-right: 30px;
-    margin: 5px;
-    margin-inline-end: 10px;
-    margin-inline-start: 20px;
-    margin-top: -400px;
-  }
-  .boutton{
-    border-radius: 30px !important;
-    padding-right: 30px;
-    margin-inline-end: 10px;
-    margin-inline-start: 20px;
-    margin: 5px;
-  }
+   padding-top: 400px; 
+ }
   
