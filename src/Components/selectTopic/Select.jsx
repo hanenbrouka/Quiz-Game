@@ -1,69 +1,37 @@
-import React, {useState,useEffect} from "react";
-import "../../Components/selectTopic/Select.css";
+import React from 'react';
+import '../selectTopic/Select.css';
 import history from "../../image/history.jpeg";
 import technology from "../../image/technology.jpeg";
-import medecin from "../../image/medecin.jpeg";
 import agricol from "../../image/agricol.jpeg";
-import axios from "axios";
+import medecin from "../../image/medecin.jpeg";
+import sport from "../../image/sport.jpg";
 
-const Select = () => { 
-  const [quizzes, setQuizzes] = useState([]);
-  const fetchTriviaQuizzes = async () => {
-    try {
-      const response = await axios.get('https://opentdb.com/api.php?amount=5');
-      setQuizzes(response.data.results);
-    } catch (error) {
-      console.error('Error fetching trivia questions:', error);
-      if (error.response && error.response.status === 429) {
-        // Retry after a certain time (e.g., 5 seconds)
-        setTimeout(() => {
-          fetchTriviaQuizzes();
-        }, 5000);
-      }
-    }
-  };
-  
-  useEffect(() => {
-    fetchTriviaQuizzes();
-  }, []);
-  const categoryList = quizzes.map(e=>e.category);
 
-  useEffect(() => {
-    console.log("categoryList", categoryList)
-  })
-
-  const gridContainerStyle = {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(3, 1fr)', // Adjust the number of categories per row as needed
-    gap: '20px',
+const Select = ({changeInterface }) => {
+  const handleTopicSelect = () => {
+    // Changer l'interface vers ContentDash lorsque vous sélectionnez un topic
+    changeInterface('interface2'); // Assurez-vous que 'interface1' est le nom correct pour ContentDash
   };
   return (
-    <div className="container" id="con">
-          
-    <label className="col">Select Topic</label><br/>
-    <label className="col">Featured Category</label>
-    
-    <div className="grid-container">
-      {categoryList.map((category, index) => (
-        <div className="grid-item" key={index}>
-          {category}
-        </div>
-      ))}
+    <div className="select-container">
+      <div className="title">Select Topic</div>
+      <div className="subtitle">Featured Category</div>
+    <div className="image-grid">
+         <div><img src={history} className='image' alt='*'/></div>
+         <div><img src={technology} className='image' alt='*'/></div>
+         <div><img src={medecin} className='image' alt='*'/></div>
+         <div><img src={agricol} className='image' alt='*'/></div>
+         <div><img src={sport} className='image' alt='*'/></div>
+         <div><img src={technology} className='image' alt='*'/></div>
+         <div><img src={medecin} className='image' alt='*'/></div>
+         <div><img src={sport} className='image' alt='*'/></div>
+         <div><img src={history} className='image' alt='*'/></div>
+         <div><img src={technology} className='image' alt='*'/></div>
+         <div><img src={medecin} className='image' alt='*'/></div>
+         <div><img src={agricol} className='image' alt='*'/></div>
+      </div>
+      <button className="more-button" onClick={handleTopicSelect}>More</button>
     </div>
-    {/* <div className="row" id="row">
-      <div className="col" ><img src={history} id="aa" /></div>
-      <div className="col"><img src={technology} id="aa" /></div>
-      <div className="col"><img src={medecin} id="aa" /></div>
-      <div className="col"><img src={agricol} id="bb" /></div>
-    </div>
-    <div className="row" id="row">
-      <div className="col" ><img src={history} id="aa" /></div>
-      <div className="col"><img src={technology} id="aa" /></div>
-      <div className="col"><img src={medecin} id="aa" /></div>
-      <div className="col"><img src={agricol} id="bb" /></div>
-    </div> */}
-    </div>
-    
   );
 };
 

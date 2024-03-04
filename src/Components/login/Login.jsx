@@ -7,21 +7,21 @@ import { FcGoogle } from "react-icons/fc";
 import { useNavigate } from "react-router-dom";
 
 function Login() {
-  const [showPassword,setShowPassword]=useState(false);
-  
+  const [showPassword, setShowPassword] = useState(false);
+
   const navigate = useNavigate();
-  const handleShowPassword =(e) =>{
+  const handleShowPassword = (e) => {
     e.preventDefault();
-    setShowPassword(!showPassword); 
-  }
+    setShowPassword(!showPassword);
+  };
   const handleSubmit = () => {
     navigate("/dashboard");
   };
   return (
-    <Container fluid style={{ margin: 0 , padding: "0.1%" }}>
+    <Container fluid style={{ margin: 0, padding: "0.1%" }}>
       <Row>
         <Col>
-          <img src={loginImage} alt="login" className="image" />
+          <img src={loginImage} alt="login" className="imageee" />
         </Col>
         <Col>
           <div className="form1">
@@ -47,17 +47,19 @@ function Login() {
               <div className="mb-3">
                 <label className="form-label">Enter password*</label>
                 <input
-                  type={showPassword===true?'text' : 'password'}
+                  type={showPassword === true ? "text" : "password"}
                   placeholder="     Password"
                   className="form-control"
                   id="idBtn"
                   //style={{ borderRadius: "100px" }}
                 />
-                </div>
-                <button className="show" onClick={(e)=>handleShowPassword (e)}>{showPassword===true?'hide':'show'}</button>
-              
+              </div>
+              <button className="show" onClick={(e) => handleShowPassword(e)}>
+                {showPassword === true ? "hide" : "show"}
+              </button>
+
               <div className="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" checked />
+                <input type="checkbox" className="form-check-input" checked />
                 <label className="form-check-label">Remember my password</label>
               </div>
               <button
@@ -73,11 +75,17 @@ function Login() {
                 <div className="separator-text">or</div>
                 <div className="separator-line"></div>
               </div>
-             <div > <button type="button" class="btn" id="btn2">  Login with Google </button> </div>
-              <div className="icon" >  <FcGoogle /></div>
-               
-                
-             
+              <div>
+                {" "}
+                <button type="button" className="btn" id="btn2">
+                  {" "}
+                  Login with Google{" "}
+                </button>{" "}
+              </div>
+              <div className="icon">
+                {" "}
+                <FcGoogle />
+              </div>
             </form>
           </div>
         </Col>
